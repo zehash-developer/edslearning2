@@ -1,0 +1,48 @@
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide {
+  display: flex;
+  align-items: center;
+  min-height: 660px;
+
+  /* matches Venia hero height */
+
+  padding: 40px;
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.hero-slide__content {
+  max-width: 480px;
+  color: #111;
+}
+
+.hero-slide h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  margin: 0 0 0.75rem;
+}
+
+.hero-slide p {
+  margin: 0 0 1.25rem;
+}
+
+.hero-slide a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* optional: tweak Swiper bullets */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 0.35;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
