@@ -35,11 +35,11 @@ export default async function decorate(block) {
     const [img, title, body, cta] = row.children;
     return `
       <div class="swiper-slide hero-slide"
-           style="background-image:url('${img.textContent.trim()}')">
+          style="background-image:url('${img.textContent.trim()}')">
         <div class="hero-slide__content" role="presentation">
           <h2>${title.innerHTML}</h2>
           <p>${body.innerHTML}</p>
-          <p>${cta.innerHTML}</p>
+          <a class="shop-link" href="${cta.innerHTML}">Shop Now</a>
         </div>
       </div>`;
   }).join('');
@@ -56,11 +56,7 @@ export default async function decorate(block) {
   // eslint-disable-next-line no-new
   new Swiper(block.querySelector('.swiper'), {
     loop: true,
-    autoplay: {
-      delay: 5000,
-      pauseOnMouseEnter: true,
-      disableOnInteraction: false,
-    },
+    autoplay: false,
     pagination: { el: '.swiper-pagination', clickable: true },
     a11y: true,
   });
