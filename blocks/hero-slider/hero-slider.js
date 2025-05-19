@@ -1,5 +1,5 @@
 /**
- * Hero-slider block — Swiper 11 via CDN, vanilla ES 6
+ * Hero-slider block — Swiper 11 via CDN, vanilla ES6
  */
 
 /* helper: load a stylesheet exactly once */

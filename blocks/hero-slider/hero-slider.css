@@ -8,6 +8,8 @@
   align-items: center;
   min-height: 660px;
 
+  background-size: cover;
+
   /* matches Venia hero height */
 
   padding: 40px;
@@ -52,7 +54,7 @@
   background-color: blue;
   border: 2px solid blue;
     border-radius: 1.25rem;
-    color: white;
+    color: white !important;
     display: inline-flex;
     font-size: 14px ;
     font-weight: 700;
